@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <title>Интернет-магазин "Кэт энерджи"</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -26,7 +30,7 @@
       <div class="navigation__wrapper">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Главная</a>
+            <a class="navigation__link" href="index.html">Главная</a>
           </li>
           <li class="navigation__item navigation__item--current">
             <a class="navigation__link" href="catalog.html">Каталог продукции</a>
@@ -51,7 +55,11 @@
         <ul class="catalog__list">
           <li class="catalog__item product-card">
             <a class="product-card__link-image" href="#">
-              <img class="product-card__image" src="#" width="161" height="172" alt="Корм со вкусом курицы 500 г">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="images/catalog-items/chiken/chiken-500-desctop@1x.png 1x, images/catalog-items/chiken/chiken-500-desctop@2x.png 2x" width="161" height="172" type="image/png">
+                <source media="(min-width: 768px)" srcset="images/catalog-items/chiken/chiken-500-tablet@1x.png 1x, images/catalog-items/chiken/chiken-500-tablet@2x.png 2x" width="161" height="172" type="image/png">
+                <img src="images/catalog-items/chiken/chiken-500-mobile@1x.png" srcset="images/catalog-items/chiken/chiken-500-mobile@2x.png 2x" width="161" height="172" alt="Корм со вкусом курицы 500 г">
+              </picture>
             </a>
             <a class="product-card__link-title" href="#">
               <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
@@ -73,7 +81,11 @@
 
           <li class="catalog__item product-card">
             <a class="product-card__link-image" href="#">
-              <img class="product-card__image" src="#" width="161" height="172" alt="Корм со вкусом курицы 1000 г">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="images/catalog-items/chiken/chiken-1000-desctop@1x.png 1x, images/catalog-items/chiken/chiken-1000-desctop@2x.png 2x" width="169" height="210" type="image/png">
+                <source media="(min-width: 768px)" srcset="images/catalog-items/chiken/chiken-1000-tablet@1x.png 1x, images/catalog-items/chiken/chiken-1000-tablet@2x.png 2x" width="168" height="206" type="image/png">
+                <img src="images/catalog-items/chiken/chiken-1000-mobile@1x.png" srcset="images/catalog-items/chiken/chiken-1000-mobile@2x.png 2x" width="168" height="206" alt="Корм со вкусом курицы 1000 г">
+              </picture>
             </a>
             <a class="product-card__link-title" href="#">
               <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
@@ -95,7 +107,11 @@
 
           <li class="catalog__item product-card">
             <a class="product-card__link-image" href="#">
-              <img class="product-card__image" src="#" width="161" height="172" alt="Корм со вкусом рыбы 500 г">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="images/catalog-items/fish/fish-500-desctop@1x.png 1x, images/catalog-items/fish/fish-500-desctop@2x.png 2x" width="172" height="196" type="image/png">
+                <source media="(min-width: 768px)" srcset="images/catalog-items/fish/fish-500-tablet@1x.png 1x, images/catalog-items/fish/fish-500-tablet@2x.png 2x" width="163" height="174" type="image/png">
+                <img src="images/catalog-items/fish/fish-500-mobile@1x.png" srcset="images/catalog-items/fish/fish-500-mobile@2x.png 2x" width="161" height="172" alt="Корм со вкусом рыбы 500 г">
+              </picture>
             </a>
             <a class="product-card__link-title" href="#">
               <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
@@ -117,7 +133,11 @@
 
           <li class="catalog__item product-card">
             <a class="product-card__link-image" href="#">
-              <img class="product-card__image" src="#" width="161" height="172" alt="Корм со вкусом рыбы 1000 г">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="images/catalog-items/fish/fish-1000-desctop@1x.png 1x, images/catalog-items/fish/fish-1000-desctop@2x.png 2x" width="172" height="196" type="image/png">
+                <source media="(min-width: 768px)" srcset="images/catalog-items/fish/fish-1000-tablet@1x.png 1x, images/catalog-items/fish/fish-1000-tablet@2x.png 2x" width="168" height="200" type="image/png">
+                <img src="images/catalog-items/fish/fish-1000-mobile@1x.png" srcset="images/catalog-items/fish/fish-1000-mobile@2x.png 2x" width="161" height="172" alt="Корм со вкусом рыбы 1000 г">
+              </picture>
             </a>
             <a class="product-card__link-title" href="#">
               <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
@@ -139,7 +159,11 @@
 
           <li class="catalog__item product-card">
             <a class="product-card__link-image" href="#">
-              <img class="product-card__image" src="#" width="161" height="172" alt="Корм со вкусом гречки 500 г">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="images/catalog-items/buckwheat/buckwheat-500-desctop@1x.png 1x, images/catalog-items/buckwheat/buckwheat-500-desctop@2x.png 2x" width="161" height="171" type="image/png">
+                <source media="(min-width: 768px)" srcset="images/catalog-items/buckwheat/buckwheat-500-tablet@1x.png 1x, images/catalog-items/buckwheat/buckwheat-500-tablet@2x.png 2x" width="161" height="171" type="image/png">
+                <img src="images/catalog-items/buckwheat/buckwheat-500-mobile@1x.png" srcset="images/catalog-items/buckwheat/buckwheat-500-mobile@2x.png 2x" width="161" height="172" alt="Корм со вкусом гречки 500 г">
+              </picture>
             </a>
             <a class="product-card__link-title" href="#">
               <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
@@ -161,7 +185,11 @@
 
           <li class="catalog__item product-card">
             <a class="product-card__link-image" href="#">
-              <img class="product-card__image" src="#" width="161" height="172" alt="Корм со вкусом гречки 1000 г">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="images/catalog-items/buckwheat/buckwheat-1000-desctop@1x.png 1x, images/catalog-items/buckwheat/buckwheat-1000-desctop@2x.png 2x" width="172" height="196" type="image/png">
+                <source media="(min-width: 768px)" srcset="images/catalog-items/buckwheat/buckwheat-1000-tablet@1x.png 1x, images/catalog-items/buckwheat/buckwheat-1000-tablet@2x.png 2x" width="168" height="200" type="image/png">
+                <img src="images/catalog-items/buckwheat/buckwheat-1000-mobile@1x.png" srcset="images/catalog-items/buckwheat/buckwheat-1000-mobile@2x.png 2x" width="161" height="172" alt="Корм со вкусом гречки 1000 г">
+              </picture>
             </a>
             <a class="product-card__link-title" href="#">
               <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
@@ -183,7 +211,11 @@
 
           <li class="catalog__item product-card">
             <a class="product-card__link-image" href="#">
-              <img class="product-card__image" src="#" width="161" height="172" alt="Корм со вкусом риса 500 г">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="images/catalog-items/rise/rise-500-desctop@1x.png 1x, images/catalog-items/rise/rise-500-desctop@2x.png 2x" width="163" height="174" type="image/png">
+                <source media="(min-width: 768px)" srcset="images/catalog-items/rise/rise-500-tablet@1x.png 1x, images/catalog-items/rise/rise-500-tablet@2x.png 2x" width="163" height="174" type="image/png">
+                <img src="images/catalog-items/rise/rise-500-mobile@1x.png" srcset="images/catalog-items/rise/rise-500-mobile@2x.png 2x" width="161" height="172" alt="Корм со вкусом риса 500 г">
+              </picture>
             </a>
             <a class="product-card__link-title" href="#">
               <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
@@ -286,6 +318,11 @@
       </div>
 
       <div class="contacts__map-container">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/map/map-desctop@1x.png 1x, images/map/map-desctop@2x.png 2x" width="1440" height="400" type="image/png">
+          <source media="(min-width: 768px)" srcset="images/map/map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x" width="768" height="400" type="image/png">
+          <img src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" width="320" height="362" alt="Карта">
+        </picture>
       </div>
     </section>
   </main>
