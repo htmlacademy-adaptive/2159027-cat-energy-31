@@ -1,0 +1,23 @@
+.button {
+  font-family: $font-secondary;
+  font-size: $font-size-s;
+  line-height: 20px;
+  color: $tertiary-color-text;
+  background-color: $bg-green;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button--show-more {
+  color: $secondary-color-text;
+  background-color: $bg-ligth-grey;
+}
+
+
+/* width: 100%
+min-width:
+max-width::
+
++ button--big
+*/
+

@@ -1,0 +1,13 @@
+.product-card {
+  font-family: $font-primary;
+  font-size: 12px;
+  line-height: 16px;
+  color: $secondary-color-text;
+}
+
+.product-card__title {
+  font-family: $font-secondary;
+  font-size: $font-size-s;
+  line-height: 20px;
+  color: $catalog-color-text;
+}

@@ -1,0 +1,16 @@
+.catalog__list {
+  list-style-type: none;
+}
+
+.catalog__item-title {
+  font-size: $font-size-s;
+  line-height: 20px;
+  color: $catalog-item-text;
+}
+
+.catalog__item-text {
+  font-family: $font-primary;
+  font-size: 12px;
+  line-height: 16px;
+  color: $secondary-color-text;
+}

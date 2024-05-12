@@ -1,0 +1,25 @@
+.programm {
+  background-color: $bg-ligth-grey;
+  text-transform: uppercase;
+}
+
+.programm__list {
+  list-style-type: none;
+}
+
+.programm__title {
+  font-family: $font-secondary;
+  font-size: $font-size-m;
+  line-height: 37px;
+}
+
+.programm__text {
+  @include text-description;
+  text-transform: none;
+}
+
+.programm__button {
+  font-family: $font-secondary;
+  font-size: $font-size-xs;
+  line-height: 18px;
+}

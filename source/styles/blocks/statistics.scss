@@ -1,0 +1,29 @@
+.statistics {
+  background-color: $bg-dark-grey;
+}
+
+.statistics__title {
+  font-family: $font-secondary;
+  font-size: $font-size-l;
+  line-height: 40px;
+}
+
+.statistics__text {
+  @include text-description;
+}
+
+.statistics__list {
+  list-style-type: none;
+}
+
+.statistics__number {
+  font-family: $font-secondary;
+  font-size: $font-size-m;
+  line-height: 24px;
+}
+
+.statistics__description {
+  @include text-description;
+  font-size: 12px;
+  line-height: 12px;
+}

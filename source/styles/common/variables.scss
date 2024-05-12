@@ -1,1 +1,28 @@
 /* здесь используйте глобальные переменные */
+$base-color-text: #000000;
+$secondary-color-text: #444444;
+$tertiary-color-text: #ffffff;
+$catalog-color-text: #222222;
+$catalog-item-text: #111111;
+$bg-green: #68b738;
+$bg-green-lighter: rgba($bg-green, 85%);
+$bg-ligth-grey: #f2f2f2;
+$bg-dark-grey: #eaeaea;
+$bg-product-card: #cdcdcd;
+
+$font-primary: "Lato", "Aria", sans-serif;
+$font-secondary: "Oswald", "Aria", sans-serif;
+
+$font-size-xs: 14px;
+$font-size-s: 16px;
+$font-size-m: 24px;
+$font-size-l: 36px;
+
+// $step: 4px;
+// $title-1: calc($step * 9px); //36
+// $title-2: calc($title-1 - 12); //24
+// $title-3: calc($title-2 - 4); //20
+// $title-4: calc($title-3 - 4); //16
+// $title-5: calc($title-4 - 2); //14
+// $title-6: calc($title-5 - 2); // 12
+

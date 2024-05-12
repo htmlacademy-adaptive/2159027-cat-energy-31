@@ -9,18 +9,20 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <div class="logo-wrapper">
-      <a class="logo" href="#">
-        <img class="logo-icon" src="images/logo/logo-mobile.svg" srcset="images/logo/logo-mobile@2x.svg" width="33" height="38" alt="Логотип Cat Energy">
-        <img class="logo-no-icon" src="images/logo/logo-text-mobile.svg" srcset="images/logo/logo-texte-mobile@2x.svg" width="101" height="18" alt="Cat Energy">
-      </a>
-    </div>
+    <a class="logo" href="#">
+      <img class="logo__icon" src="images/logo/logo-mobile.svg" srcset="images/logo/logo-mobile@2x.svg" width="33" height="38" alt="Логотип Cat Energy">
+      <img class="logo__no-icon" src="images/logo/logo-text-mobile.svg" srcset="images/logo/logo-texte-mobile@2x.svg" width="101" height="18" alt="Cat Energy">
+    </a>
 
     <nav class="navigation">
       <button class="navigation__toggle" type="button">
@@ -55,6 +57,11 @@
           <source media="(min-width: 768px)" srcset="images/hero/hero-tablet@1x.png 1x, images/hero/hero-tablet@2x.png 2x" width="709" height="609" type="image/png">
           <img src="images/hero/hero-mobile@1x.png" srcset="images/hero/hero-mobile@2x.png 2x" width="280" height="270" alt="Изображение питания для кота">
         </picture>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/hero/hero-desctop@1x.png 1x, images/hero/hero-desctop@2x.png 2x" width="552" height="499" type="image/png">
+          <source media="(min-width: 768px)" srcset="images/hero/hero-tablet@1x.png 1x, images/hero/hero-tablet@2x.png 2x" width="709" height="609" type="image/png">
+          <img src="images/hero/hero-mobile@1x.png" srcset="images/hero/hero-mobile@2x.png 2x" width="280" height="270" alt="Изображение питания для кота">
+        </picture>
         <a class="button button--primary" href="#">Подобрать программу</a>
       </div>
     </section>
@@ -66,12 +73,12 @@
         <ul class="programm__list">
           <li class="programm__item programm-slim">
             <h3 class="programm__title">Похудение</h3>
-            <p class="programm__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <p class="programm__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="programm__button" href="catalog.html">Каталог slim</a>
           </li>
           <li class="programm__item programm-pro">
             <h3 class="programm__title">Набор массы</h3>
-            <p class="programm__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <p class="programm__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="programm__button" href="catalog.html">Каталог pro</a>
           </li>
         </ul>
@@ -140,9 +147,17 @@
               <source media="(min-width: 768px)" srcset="images/slider/fat-cat-tablet@1x.png 1x, images/slider/fat-cat-tablet@2x.png 2x" width="560" height="512" type="image/png">
               <img src="images/slider/fat-cat-mobile@1x.png" srcset="images/slider/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Изображение толстого кота">
             </picture>
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/slider/fat-cat-tablet@1x.png 1x, images/slider/fat-cat-tablet@2x.png 2x" width="560" height="512" type="image/png">
+              <img src="images/slider/fat-cat-mobile@1x.png" srcset="images/slider/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Изображение толстого кота">
+            </picture>
           </div>
 
           <div class="statistics__images-after">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/slider/slim-cat-tablet@1x.png 1x, images/slider/slim-cat-tablet@2x.png 2x" width="560" height="512" type="image/png">
+              <img src="images/slider/slim-cat-mobile@1x.png" srcset="images/slider/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Изображение стройного кота">
+            </picture>
             <picture>
               <source media="(min-width: 768px)" srcset="images/slider/slim-cat-tablet@1x.png 1x, images/slider/slim-cat-tablet@2x.png 2x" width="560" height="512" type="image/png">
               <img src="images/slider/slim-cat-mobile@1x.png" srcset="images/slider/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Изображение стройного кота">
@@ -154,7 +169,7 @@
 
     <section class="contacts">
       <div class="contacts__wrapper white">
-        <h2 class="contacts__title">Контакты</h2>
+        <h2 class="visually-hidden">Контакты</h2>
         <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
         <address class="contacts__address">
           ул. Большая Конюшенная, д. 19/8
@@ -163,6 +178,11 @@
       </div>
 
       <div class="contacts__map-container">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/map/map-desctop@1x.png 1x, images/map/map-desctop@2x.png 2x" width="1440" height="400" type="image/png">
+          <source media="(min-width: 768px)" srcset="images/map/map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x" width="768" height="400" type="image/png">
+          <img src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" width="320" height="362" alt="Карта">
+        </picture>
         <picture>
           <source media="(min-width: 1440px)" srcset="images/map/map-desctop@1x.png 1x, images/map/map-desctop@2x.png 2x" width="1440" height="400" type="image/png">
           <source media="(min-width: 768px)" srcset="images/map/map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x" width="768" height="400" type="image/png">

@@ -1,0 +1,13 @@
+.advantages__list {
+  list-style-type: none;
+}
+
+.advantages__title {
+  font-family: $font-secondary;
+  font-size: $font-size-l;
+  line-height: 40px;
+}
+
+.advantages__text {
+  @include text-description;
+}
