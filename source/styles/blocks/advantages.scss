@@ -1,13 +1,122 @@
-.advantages__list {
-  list-style-type: none;
+.advantages__wrapper {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $special-grey_6;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 }
 
 .advantages__title {
-  font-family: $font-secondary;
-  font-size: $font-size-l;
+  margin: 0 0 40px;
+  padding: 0;
   line-height: 40px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 82px;
+  }
+}
+
+.advantages__list {
+  @include reset-list;
+  margin-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 37px 138px;
+    counter-reset: step 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 77px;
+    margin-bottom: 39px;
+  }
+}
+
+.advantages__item {
+  margin: 0 0 26px;
+  padding: 0 0 0 80px;
+  position: relative;
+
+  &::before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $bg-green;
+    width: 60px;
+    height: 60px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--icon-leaf::before {
+    background-image: url("../../icons/stack.svg#icon_leaf");
+    background-size: 32px 32px;
+  }
+
+  &--icon-water::before {
+    background-image: url("../../icons/stack.svg#icon-water");
+    background-size: 30px 29px;
+  }
+
+  &--icon-eat::before {
+    background-image: url("../../icons/stack.svg#icon_eat");
+    background-size: 26px 29px;
+  }
+
+  &--icon-period::before {
+    background-image: url("../../icons/stack.svg#icon-watch");
+    background-size: 26px 31px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-top: 39px;
+    width: 246px;
+    height: 280px;
+    counter-increment: step 1;
+
+    &::after {
+      display: block;
+      content: "" counter(step) "";
+      position: absolute;
+      top: -39px;
+      left: 116px;
+      font-family: $font-secondary;
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic-grey;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 247px;
+    height: 280px;
+  }
 }
 
 .advantages__text {
-  @include text-description;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 245px;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    padding: 71px 0 57px;
+  }
 }

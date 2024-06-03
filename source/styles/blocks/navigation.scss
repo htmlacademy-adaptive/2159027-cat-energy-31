@@ -1,12 +1,123 @@
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation__toggle {
+  padding: 0;
+  margin: 0;
+  display: block;
+  background-color: $tertiary-color-text;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 7px;
+  right: 20px;
+  width: 26px;
+  height: 24px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.navigation--closed .navigation__toggle {
+  &::before {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 24px;
+    background-image: url("../../icons/stack.svg#navigation__toggle-open");
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+}
+
+.navigation--opened .navigation__toggle {
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../icons/stack.svg#navigation__toggle-close");
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+}
+
 .navigation__list {
+  @include reset-list;
+  display: none;
   font-family: $font-secondary;
-  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 520px;
+    z-index: 1;
+  }
+}
+
+.navigation__list--accent-color .navigation__link {
+  @media (min-width: $desktop-width) {
+    color: $tertiary-color-text;
+  }
 }
 
 .navigation__link {
+  padding: 13px 1px;
+  position: relative;
+  display: block;
   font-size: 20px;
   line-height: 20px;
   color: $base-color-text;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.navigation__link--current {
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      bottom: 3px;
+      left: 0;
+      right: 0;
+      background-color: $bg-green;
+    }
+  }
+}
+
+.navigation__list--accent-color .navigation__link--current::after {
+  @media (min-width: $desktop-width) {
+    background-color: $tertiary-color-text;
+  }
 }

@@ -1,0 +1,14 @@
+.page {
+  height: 100vh;
+}
+
+.page__body {
+  margin: 0;
+  min-height: 100%;
+  font-family: $font-primary;
+  font-size: $font-size-xs;
+  line-height: 18px;
+  font-weight: 400;
+  color: $secondary-color-text;
+  background-color: $tertiary-color-text;
+}

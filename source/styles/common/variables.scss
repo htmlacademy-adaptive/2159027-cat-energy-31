@@ -5,10 +5,21 @@ $tertiary-color-text: #ffffff;
 $catalog-color-text: #222222;
 $catalog-item-text: #111111;
 $bg-green: #68b738;
-$bg-green-lighter: rgba($bg-green, 85%);
-$bg-ligth-grey: #f2f2f2;
-$bg-dark-grey: #eaeaea;
-$bg-product-card: #cdcdcd;
+$bg-green-darken: #5eaa2f;
+$bg-green-lighter: rgba(104, 183, 56, 0.85);
+$basic-grey: #f2f2f2;
+$special-grey: #eaeaea;
+$special-grey_2: #d9d9d9;
+$special-grey_3:#cdcdcd;
+$special-grey_4: #ebebeb;
+$special-grey_5: #d3d3d3;
+$special-grey_6: #e6e6e6;
+$social-grey: #666666;
+$gradient-first: #504f54;
+$gradient-two: #444348;
+$gradient-three: #403f45;
+$error-color: #ff8282;
+
 
 $font-primary: "Lato", "Aria", sans-serif;
 $font-secondary: "Oswald", "Aria", sans-serif;
@@ -18,11 +29,5 @@ $font-size-s: 16px;
 $font-size-m: 24px;
 $font-size-l: 36px;
 
-// $step: 4px;
-// $title-1: calc($step * 9px); //36
-// $title-2: calc($title-1 - 12); //24
-// $title-3: calc($title-2 - 4); //20
-// $title-4: calc($title-3 - 4); //16
-// $title-5: calc($title-4 - 2); //14
-// $title-6: calc($title-5 - 2); // 12
-
+$tablet-width: 768px;
+$desktop-width: 1440px;

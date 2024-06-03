@@ -1,0 +1,46 @@
+.copyright-link {
+  font-size: $font-size-s;
+  line-height: 20px;
+  color: $secondary-color-text;
+  text-decoration: none;
+}
+
+.copyright-link__text {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 7px 166px 7px 0;
+
+  &::after {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../icons/stack.svg#icon-html_academy");
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    background-color: $social-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    padding: 7px 0;
+  }
+}
+
+.copyright-link__text:active {
+  opacity: 0.3;
+}
+
+.copyright-link__text:hover::after,
+.copyright-link__text:focus::after {
+  background-color: $bg-green;
+}
+
+.copyright-link__text:active::after {
+  background-color: rgba(104, 183, 56, 0.3);
+}

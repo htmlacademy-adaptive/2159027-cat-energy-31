@@ -1,29 +1,204 @@
 .statistics {
-  background-color: $bg-dark-grey;
+  background-color: $special-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, $special-grey 43%, $tertiary-color-text 43%);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, $basic-grey 79%, $tertiary-color-text 21%);
+  }
+}
+
+.statistics__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-bottom: 101px;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 75px;
+    justify-content: space-between;
+  }
 }
 
 .statistics__title {
-  font-family: $font-secondary;
-  font-size: $font-size-l;
   line-height: 40px;
+  margin: 25px 0 39px;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 55px 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 155px;
+    width: 100%;
+  }
+}
+
+.statistics__info {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 99px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 436px;
+    margin: 0;
+    display: block;
+  }
 }
 
 .statistics__text {
-  @include text-description;
+  margin: 0 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 68px;
+    width: 436px;
+  }
 }
 
 .statistics__list {
-  list-style-type: none;
+  @include reset-list;
+  margin-bottom: 35px;
+  display: flex;
+  gap: 32px;
+
+  @media (min-width: $tablet-width) {
+    gap: 43px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 62px;
+  }
+}
+
+.statistics__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 124px;
+  height: 56px;
+  border: 1px solid $special-grey_3;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 72px;
+    margin: 0;
+  }
 }
 
 .statistics__number {
   font-family: $font-secondary;
   font-size: $font-size-m;
   line-height: 24px;
+  color: $base-color-text;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .statistics__description {
-  @include text-description;
   font-size: 12px;
   line-height: 12px;
+  width: 77px;
+  text-align: center;
+  position: absolute;
+  bottom: -15px;
+  background: $special-grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: $tertiary-color-text;
+    font-size: $font-size-xs;
+    line-height: 14px;
+    width: 100%;
+    bottom: -6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
+  }
+}
+
+.statistics__total {
+  font-family: $font-secondary;
+  font-size: $font-size-xs;
+  font-weight: 400;
+  line-height: 20px;
+  color: $base-color-text;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 19px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-top: 13px;
+    min-width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    text-align: left;
+  }
+}
+
+.statistics__price {
+  margin-left: 4px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    text-align: end;
+    margin-top: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+    margin-left: 66px;
+  }
+}
+
+.statistics__toggle {
+  cursor: pointer;
+  background-color: $social-grey;
+  width: 4px;
+  height: 100%;
+  border: none;
+  border-radius: 2px;
+  display: block;
+}
+
+.statistics__slider {
+  display: flex;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: -9px;
+    right: 30px;
+  }
 }

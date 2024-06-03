@@ -1,4 +1,12 @@
 .inner-heading__title {
-  font-size: $font-size-l;
-  line-height: 36px;
+  margin: 28px 0 39px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    margin: 41px 0 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 19px 0 87px;
+  }
 }

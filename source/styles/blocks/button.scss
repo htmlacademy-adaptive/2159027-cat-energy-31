@@ -1,23 +1,57 @@
 .button {
+  padding: 10px 15px;
+
   font-family: $font-secondary;
   font-size: $font-size-s;
   line-height: 20px;
   color: $tertiary-color-text;
+
   background-color: $bg-green;
+  display: grid;
+  align-items: center;
+  border: none;
+  cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
+
+
+  &:hover {
+    background-color: $bg-green-darken;
+  }
+
+  &:active {
+    color: rgba($tertiary-color-text, 0.3);
+  }
+
+
+  &:focus {
+    background-color: $bg-green-darken;
+  }
+
+
+  &:disabled {
+    background-color: $basic-grey;
+  }
 }
 
 .button--show-more {
   color: $secondary-color-text;
-  background-color: $bg-ligth-grey;
+  background-color: $basic-grey;
+
+  &:hover {
+    background-color: $special-grey_4;
+  }
+
+  &:active {
+    background-color: $special-grey_4;
+  }
 }
 
-
-/* width: 100%
-min-width:
-max-width::
-
-+ button--big
-*/
-
+.button--big {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 26px;
+  }
+}

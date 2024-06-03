@@ -8,10 +8,8 @@
   }
 }
 
-@mixin text-description {
-  font-family: $font-primary;
-  font-size: $font-size-xs;
-  line-height: 18px;
-  color: $secondary-color-text;
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-
