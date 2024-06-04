@@ -4,14 +4,14 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    gap: 66px;
-    margin-bottom: 74px;
+    gap: 66px 60px;
+    margin: 0 0 74px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     gap: 68px 80px;
-    margin-bottom: 70px;
+    margin: 0 0 71px;
   }
 }
 
@@ -66,7 +66,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 50px 33px 40px;
-    margin-top: 76px;
+    margin: 76px 0 0;
     border: 2px solid $basic-grey;
 
     &::before {
@@ -75,14 +75,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 68px;
+    margin: 68px 0 0;
   }
 }
 
 .catalog__item-title {
   text-decoration: none;
-  margin: 0;
-  margin-bottom: -1px;
+  margin: 0 0 -1px;
 
   &::before {
     content: "";
@@ -92,6 +91,7 @@
     right: 0;
     height: 30px;
     background-image: url("../../icons/plus.svg");
+    background-color: transparent;
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
@@ -110,8 +110,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 13px;
-    padding-top: 48px;
+    margin: 0 0 13px;
+    padding: 48px 1px 0;
   }
 }
 
@@ -119,21 +119,20 @@
   color: $catalog-item-text;
   text-align: center;
   display: block;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
 }
 
 .catalog__item-text {
-  margin: 0;
-  margin-bottom: 21px;
+  margin: 0 0 21px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     line-height: 18px;
-    margin-bottom: 81px;
+    margin: 0 0 81px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 89px;
+    margin: 0 0 89px;
   }
 }
 

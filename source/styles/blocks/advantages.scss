@@ -21,13 +21,13 @@
 
 .advantages__list {
   @include reset-list;
-  margin-bottom: 55px;
+  margin: 0 0 55px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 6px;
+    margin: 0 0 6px;
     display: flex;
     flex-wrap: wrap;
-    gap: 37px 138px;
+    gap: 38px 138px;
     counter-reset: step 0;
   }
 
@@ -35,7 +35,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 77px;
-    margin-bottom: 39px;
+    margin: 0 0 39px;
   }
 }
 
@@ -117,6 +117,6 @@
     text-align: left;
     position: absolute;
     left: 0;
-    padding: 71px 0 57px;
+    padding: 72px 0 57px;
   }
 }

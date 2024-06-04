@@ -87,6 +87,7 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
+    padding: 17px 0;
   }
 
   &:hover {
@@ -108,7 +109,7 @@
       content: "";
       position: absolute;
       height: 2px;
-      bottom: 3px;
+      bottom: 5px;
       left: 0;
       right: 0;
       background-color: $bg-green;

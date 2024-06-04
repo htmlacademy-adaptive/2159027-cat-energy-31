@@ -15,7 +15,6 @@
   text-transform: uppercase;
   text-align: center;
 
-
   &:hover {
     background-color: $bg-green-darken;
   }
@@ -24,11 +23,9 @@
     color: rgba($tertiary-color-text, 0.3);
   }
 
-
   &:focus {
     background-color: $bg-green-darken;
   }
-
 
   &:disabled {
     background-color: $basic-grey;
