@@ -1,0 +1,39 @@
+.form {
+  width: 100%;
+}
+
+.form__field {
+  font-family: $font-secondary;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0 0 15px;
+  padding: 13px 12px;
+  width: 100%;
+  color: $secondary-color-text;
+  text-transform: uppercase;
+  border: 1px solid $special-grey_3;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 376px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 496px;
+  }
+
+  &:user-invalid {
+    border: 2px solid $error-color;
+  }
+}
+
+.form__button {
+  width: 100%;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 15px 26px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+  }
+}

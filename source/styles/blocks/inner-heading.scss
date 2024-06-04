@@ -1,0 +1,12 @@
+.inner-heading__title {
+  margin: 28px 0 39px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    margin: 41px 0 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 72px 0 87px;
+  }
+}

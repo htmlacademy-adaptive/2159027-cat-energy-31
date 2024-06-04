@@ -1,0 +1,116 @@
+.product-card {
+  margin-top: auto;
+  padding: 20px 0 24px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    padding: 9px 36px 40px;
+    background: linear-gradient(to top, $basic-grey 85%, $tertiary-color-text 85%);
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 429px;
+  }
+}
+
+.product-card__link-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 0 13px;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 210px;
+    margin: 0 0 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 10px;
+    width: 169px;
+    height: 210px;
+  }
+}
+
+.product-card__title {
+  margin: 0 0 17px;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    margin: 0 0 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 23px;
+  }
+}
+
+.product-card__link-title {
+  display: block;
+  width: 76px;
+  text-align: start;
+  text-decoration: none;
+  color: $catalog-color-text;
+
+  @media (min-width: $tablet-width) {
+    width: 135px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 140px;
+  }
+}
+
+.product-card__property-wrapper {
+  width: 50%;
+  margin: 0 0 -1px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 10px;
+  }
+}
+
+.product-card__property {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 21px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $special-grey_3;
+  }
+}
+
+.product-card__info {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    height: 32px;
+    padding: 5px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.product-card__value {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.product-card__button {
+  width: 100%;
+  margin-top: auto;
+}

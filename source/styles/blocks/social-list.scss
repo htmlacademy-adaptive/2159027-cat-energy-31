@@ -1,0 +1,72 @@
+.social-list {
+  @include reset-list;
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
+  width: 100%;
+
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0 0 0 34px;
+    width: auto;
+  }
+}
+
+.social-list__link {
+  padding: 19px 0;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  &:hover {
+    &::before {
+      background-color: $bg-green;
+    }
+  }
+
+  &:focus {
+    &::before {
+      background-color: $bg-green;
+    }
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.3;
+    }
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 22px;
+
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: cover;
+    background-color: $social-grey;
+
+    transition: background-color 0.3s, opacity 0.3s;
+  }
+
+  &--vkontakte::before {
+    mask-image: url("../../icons/stack.svg#vk");
+    mask-size: 27px 17px;
+  }
+
+  &--youtube::before {
+    mask-image: url("../../icons/stack.svg#yt");
+    mask-size: 24px 19px;
+  }
+
+  &--telegram::before {
+    mask-image: url("../../icons/stack.svg#tg");
+    mask-size: 20px 17px;
+  }
+}
