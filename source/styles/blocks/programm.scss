@@ -3,7 +3,7 @@
 }
 
 .programm__wrapper {
-  margin: 20px 0;
+  margin: 20px auto;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
@@ -19,7 +19,7 @@
 
   @media (min-width: $tablet-width) {
     gap: 30px;
-    margin: 0 0 55px;
+    margin: 0 0 56px;
   }
 
   @media (min-width: $desktop-width) {
@@ -65,14 +65,14 @@
 
     @media (min-width: $tablet-width) {
       left: 442px;
-      top: 80px;
+      top: 82px;
       width: 205px;
       height: 211px;
     }
 
     @media (min-width: $desktop-width) {
       left: 52px;
-      top: 41px;
+      top: 42px;
       width: 100px;
       height: 106px;
     }
@@ -90,14 +90,14 @@
 
     @media (min-width: $tablet-width) {
       left: 411px;
-      top: 90px;
+      top: 92px;
       width: 268px;
       height: 200px;
     }
 
     @media (min-width: $desktop-width) {
       left: 33px;
-      top: 44px;
+      top: 47px;
       width: 134px;
       height: 100px;
     }

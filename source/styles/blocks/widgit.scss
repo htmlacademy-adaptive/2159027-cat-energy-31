@@ -2,24 +2,34 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
   gap: 48px;
   width: 280px;
-  padding: 58px 0 44px;
+  min-height: 290px;
   margin-bottom: 40px;
 
   &::before {
     content: "";
-    width: 78px;
+    position: absolute;
+    width: 80px;
     height: 80px;
     background-image: url("../../icons/stack.svg#icon_gift");
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: cover;
+    top: 59px;
 
     @media (min-width: $tablet-width) {
-      width: 80px;
-      height: 82px;
+      width: 82px;
+      height: 83px;
+      top: 56px;
+      left: 77px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 58px;
+      left: 82px;
     }
   }
 
@@ -43,19 +53,19 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 57px 110px 60px 77px;
     width: 707px;
+    min-height: 200px;
+    margin-bottom: 80px;
+    padding: 0 110px 0 0;
+    flex-direction: row;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
     gap: 26px;
-    padding: 56px 41px 43px;
     width: 245px;
-    height: 288px;
+    min-height: 290px;
+    padding: 0;
   }
 }
 
@@ -66,14 +76,17 @@
   color: $tertiary-color-text;
   max-width: 175px;
   margin: 0;
+  padding: 0 0 43px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     text-align: left;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 225px;
+    max-width: 185px;
+    padding-bottom: 42px;
     text-align: center;
   }
 }

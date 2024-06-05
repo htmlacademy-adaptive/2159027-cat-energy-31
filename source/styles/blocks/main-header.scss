@@ -1,12 +1,12 @@
 .main-header {
-  padding: 13px 0 11px;
+  // padding: 12px 0 0;
 
   @media (min-width: $tablet-width) {
-    padding: 24px 0;
+    // padding: 24px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 53px 0 0;
+    // padding: 54px 0 0;
   }
 }
 
@@ -19,11 +19,23 @@
 }
 
 .main-header__wrapper {
+  padding-top: 13px;
+  padding-bottom: 11px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   column-gap: 13px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 54px;
+  }
 }
 
 .main-header__logo {
