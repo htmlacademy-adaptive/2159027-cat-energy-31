@@ -5,13 +5,13 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     gap: 66px 60px;
-    margin: 0 0 74px;
+    margin: 0 0 72px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     gap: 68px 80px;
-    margin: 0 0 71px;
+    margin: 0 0 73px;
   }
 }
 
@@ -99,8 +99,8 @@
     @media (min-width: $tablet-width) {
       width: 60px;
       height: 60px;
-      top: -50px;
-      left: 94px;
+      top: -49px;
+      left: 96px;
     }
 
     @media (min-width: $desktop-width) {
@@ -111,7 +111,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 13px;
-    padding: 48px 1px 0;
+    padding: 49px 1px 0;
   }
 }
 

@@ -6,7 +6,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    padding: 9px 36px 40px;
+    padding: 8px 36px 40px;
     background: linear-gradient(to top, $basic-grey 85%, $tertiary-color-text 85%);
     align-items: center;
     justify-content: flex-end;
@@ -25,7 +25,7 @@
   @media (min-width: $tablet-width) {
     width: 200px;
     height: 210px;
-    margin: 0 0 17px;
+    margin: 0 0 18px;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,7 +40,7 @@
 
   @media (min-width: $tablet-width) {
     align-self: center;
-    margin: 0 0 16px;
+    margin: 0 0 14px;
   }
 
   @media (min-width: $desktop-width) {
@@ -73,7 +73,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 0 0 8px;
+    margin: 0 0 11px;
   }
 
   @media (min-width: $desktop-width) {
@@ -85,10 +85,6 @@
   display: flex;
   flex-direction: column;
   margin: 0 0 21px;
-
-  @media (min-width: $tablet-width) {
-    border-bottom: 1px solid $special-grey_3;
-  }
 }
 
 .product-card__info {
@@ -97,7 +93,8 @@
 
   @media (min-width: $tablet-width) {
     height: 32px;
-    padding: 5px 0 0;
+    padding: 7px 0 0;
+    border-bottom: 1px solid #cdcdcd;
   }
 
   @media (min-width: $desktop-width) {

@@ -15,6 +15,11 @@
 .logo__text {
   display: block;
   margin: 0;
+  margin-right: 89px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
 }
 
 .logo__text--header {
