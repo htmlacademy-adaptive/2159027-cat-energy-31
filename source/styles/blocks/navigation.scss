@@ -16,10 +16,6 @@
   width: 26px;
   height: 24px;
 
-  &--opened {
-    top: 7px;
-  }
-
   @media (min-width: $tablet-width) {
     display: none;
   }
